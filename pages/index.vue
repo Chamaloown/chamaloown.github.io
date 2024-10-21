@@ -9,7 +9,7 @@ const french = ref(false)
 
 <template>
     <div class="flex flex-col h-full w-full text-xl">
-        <div class="m-24 space-y-16">
+        <div class="space-y-16">
             <div class="flex">   
                 <div class="flex flex-auto flex-col justify-center text-left text-3xl space-y-10 w-1/2">
                     <div class="text-9xl">Hello,</div>

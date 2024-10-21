@@ -7,7 +7,7 @@
 
 <template>
     <div class="flex flex-row justify-between text-3xl">
-                <div>Malo Landemaine</div>
+                <div><NuxtLink to="/">Malo Landemaine</NuxtLink></div>
                 <div class="flex flex-row space-x-10">
                     <div><NuxtLink to="/contact">Contact</NuxtLink></div>
                     <div>•</div>
