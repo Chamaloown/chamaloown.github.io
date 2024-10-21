@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "@nuxt/icon",
     '@nuxtjs/color-mode',
-    "@nuxt/image",
     "@nuxt/fonts",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n"
@@ -29,7 +28,4 @@ export default defineNuxtConfig({
     },
     importPT: { from: path.resolve(__dirname, "./presets/aura/") }, //import and apply preset
   },
-  image: {
-    // Options
-  }
 });

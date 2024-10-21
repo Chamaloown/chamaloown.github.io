@@ -10,23 +10,6 @@ const french = ref(false)
 <template>
     <div class="flex flex-col h-full w-full text-xl">
         <div class="m-24 space-y-16">
-            <div class="flex flex-row justify-between text-3xl">
-                <div>Malo Landemaine</div>
-                <div class="flex flex-row space-x-10">
-                    <div>Contact</div>
-                    <div>•</div>
-                    <div v-tooltip.bottom="$t('wip')">{{ $t('work') }}</div>
-                    <div v-tooltip.bottom="$t('wip')">Blog</div>
-                    <div>•</div>
-                    <div class="-mt-2">
-                        <Select v-model="colorMode.preference" :options="modeParams" class="text-black bg-grey" />
-                    </div>
-                    <div class="space-x-6">
-                        <Icon name="fxemoji:franceflag" @click="setLocale('fr'); french = true" :class="{ active:!french }"/>
-                        <Icon name="twemoji:flag-united-kingdom"@click="setLocale('en'); french = false"  :class="{ active: french }"/>
-                    </div>
-                </div>
-            </div>
             <div class="flex">   
                 <div class="flex flex-auto flex-col justify-center text-left text-3xl space-y-10 w-1/2">
                     <div class="text-9xl">Hello,</div>

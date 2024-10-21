@@ -19,7 +19,8 @@ export default defineI18nConfig(() => ({
         chat: "Let's chat",
         need: "Need an experienced senior full-stack developer to help out?",
         mail: "Send me an email to discuss your project.",
-        connect: "Alternatively connect with me elsewhere on the web →"
+        connect: "Alternatively connect with me elsewhere on the web →",
+        intouch: "Get in touch",
       },
       fr: {
         wip: "⚠️ En cours de construction",
@@ -38,7 +39,8 @@ export default defineI18nConfig(() => ({
         chat: "Discutons-en",
         need: "Besoin d'un développeur full-stack senior expérimenté pour vous aider ?",
         mail: "Envoyez-moi un email pour discuter de votre projet.",
-        connect: "Ou connectez-vous avec moi ailleurs sur le web →"
+        connect: "Ou connectez-vous avec moi ailleurs sur le web →",
+        intouch: "Prendre contact"
       }
     }
   }))
