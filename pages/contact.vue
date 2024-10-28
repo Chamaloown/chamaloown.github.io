@@ -1,49 +1,94 @@
 <script setup lang="ts">
-const sendMessage = async (fields: Record<string, string>) => {
-  await new Promise((r) => setTimeout(r, 1000));
-  alert(JSON.stringify(fields));
-};
+import { useForm } from "vee-validate";
+import { z } from "zod";
+import { toTypedSchema } from "@vee-validate/zod";
+
+const { t } = useI18n();
+
+const toast = useToast();
+
+const schema = toTypedSchema(
+  z.object({
+    email: z.string().email(),
+    subject: z.string(),
+    message: z.string(),
+  }),
+);
+
+const { errors, defineField, handleSubmit } = useForm({
+  validationSchema: schema,
+});
+const [email, emailAttrs] = defineField("email");
+const [subject, subjectAttrs] = defineField("subject");
+const [message, messageAttrs] = defineField("message");
+
+const onSubmit = handleSubmit(async () => {
+  const result = await new Promise((resolve) => {
+    setTimeout(() => resolve(true), 600);
+  });
+
+  if (!result) {
+    toast.add({
+      severity: "error",
+      summary: "Error",
+      detail: "Please try later",
+    });
+  }
+
+  toast.add({
+    severity: "success",
+    summary: t("sended"),
+    detail: t("message"),
+    life: 5000,
+  });
+});
 </script>
 
 <template>
   <div class="flex flex-row justify-between">
-    <div class="space-y-4 w-2/3">
-      {{ $t("intouch") }}
-      <FormKit type="form" @submit="sendMessage">
-        <FormKit
-          id="email"
-          type="email"
-          name="email"
-          placeholder="jean.dupont@example.com"
-          validation="require|email"
-          label-class="block mb-1 font-bold text-sm"
-          outer-class=""
-          inner-class="max-w-md border border-gray-400 rounded-lg mb-1 overflow-hidden focus-within:border-blue-500"
-          input-class="w-full h-10 px-3 border-none text-base text-gray-700 placeholder-gray-400"
-          help-class="text-xs text-gray-500"
-        />
-        <FormKit
-          id="subject"
-          type="text"
-          name="subject"
-          placeholder="Let's get in touch"
-          validation="required"
-          label-class="block mb-1 font-bold text-sm"
-          outer-class=""
-          inner-class="max-w-md border border-gray-400 rounded-lg mb-1 overflow-hidden focus-within:border-blue-500"
-          input-class="w-full h-10 px-3 border-none text-base text-gray-700 placeholder-gray-400"
-          help-class="text-xs text-gray-500"
-        />
-        <FormKit
-          id="message"
-          type="textarea"
-          name="message"
-          placeholder="Your message"
-          validation="required"
-        />
-      </FormKit>
+    <Toast />
+    <div class="flex flex-col space-y-4 w-2/3">
+      <div>
+        {{ $t("intouch") }}
+      </div>
+      <form class="space-y-4" @submit="onSubmit">
+        <div>
+          <InputText
+            v-model="email"
+            v-bind="emailAttrs"
+            placeholder="Email"
+            aria-label="Email"
+            type="email"
+            class="w-1/2"
+          />
+          <div class="text-red">{{ errors.email }}</div>
+        </div>
+        <div>
+          <InputText
+            v-model="subject"
+            v-bind="subjectAttrs"
+            :placeholder="t('subject')"
+            :aria-label="t('subject')"
+            type="text"
+            class="w-1/2"
+          />
+          <div class="text-red">{{ errors.subject }}</div>
+        </div>
+        <div>
+          <Textarea
+            v-model="message"
+            v-bind="messageAttrs"
+            rows="5"
+            cols="30"
+            class="w-2/3 h-96"
+            placeholder="Message"
+          />
+        </div>
+        <div class="text-red">{{ errors.message }}</div>
+        <div>
+          <button class="border-2 rounded-md p-2">{{ $t("submit") }}</button>
+        </div>
+      </form>
     </div>
   </div>
 </template>
-
-<style></style>

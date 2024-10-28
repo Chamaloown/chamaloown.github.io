@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
-    "@formkit/nuxt",
     "@vueuse/motion/nuxt",
     "@nuxt/eslint",
   ],

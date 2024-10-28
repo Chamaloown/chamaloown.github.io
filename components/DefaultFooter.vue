@@ -6,7 +6,7 @@
       <div>{{ $t("me") }}</div>
     </div>
     <div>
-      <Social :size="30" />
+      <SocialNetworks :size="30" />
     </div>
   </div>
 </template>

@@ -27,6 +27,10 @@ export default defineI18nConfig(() => ({
       mail: "Send me an email to discuss your project.",
       connect: "Alternatively connect with me elsewhere on the web →",
       intouch: "Get in touch",
+      sended: "Sended",
+      submit: "Submit",
+      message: "Your message has been sent to Malo!",
+      subject: "Subject",
     },
     fr: {
       wip: "⚠️ En cours de construction",
@@ -53,6 +57,10 @@ export default defineI18nConfig(() => ({
       mail: "Envoyez-moi un email pour discuter de votre projet.",
       connect: "Ou connectez-vous avec moi ailleurs sur le web →",
       intouch: "Prendre contact",
+      sended: "Envoyé",
+      submit: "Envoyer",
+      message: "Ton message à été envoyé à Malo !",
+      subject: "Sujet",
     },
   },
 }));
