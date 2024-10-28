@@ -8,7 +8,7 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    "./formkit.theme.ts"
+    "./formkit.theme.ts",
   ],
   theme: {
     colors: {
@@ -20,11 +20,11 @@ export default {
       red: "#A8201A",
       black: "#000000",
       white: "#FFFFFF",
-      sand: "#242424"
+      sand: "#242424",
     },
     fontFamily: {
-      'sans': ' Work Sans, sans-serif'
-    }
+      sans: " Work Sans, sans-serif",
+    },
   },
   plugins: [require("tailwindcss-primeui")],
 };

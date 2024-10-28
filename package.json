@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "pnpm exec prettier --write ."
   },
   "dependencies": {
     "@formkit/core": "^1.6.7",

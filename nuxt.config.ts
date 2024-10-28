@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: "page", mode: "out-in" },
   },
   postcss: {
     plugins: {
@@ -17,13 +17,13 @@ export default defineNuxtConfig({
   modules: [
     "@primevue/nuxt-module",
     "@nuxt/icon",
-    '@nuxtjs/color-mode',
+    "@nuxtjs/color-mode",
     "@nuxt/fonts",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "@formkit/nuxt",
     "@vueuse/motion/nuxt",
-    "@nuxt/eslint"
+    "@nuxt/eslint",
   ],
   primevue: {
     options: {
@@ -31,13 +31,12 @@ export default defineNuxtConfig({
     },
     importPT: { from: path.resolve(__dirname, "./presets/aura/") },
   },
-  eslint: {
-  },
+  eslint: {},
   runtimeConfig: {
     public: {
       motion: {
         directives: {
-          'pop-bottom': {
+          "pop-bottom": {
             initial: {
               scale: 0,
               opacity: 0,
@@ -47,11 +46,10 @@ export default defineNuxtConfig({
               scale: 1,
               opacity: 1,
               y: 0,
-            }
-          }
-        }
-      }
-    }
-  }
-
+            },
+          },
+        },
+      },
+    },
+  },
 });

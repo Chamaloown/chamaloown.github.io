@@ -1,3 +1,3 @@
-import { defaultConfig } from '@formkit/vue'
+import { defaultConfig } from "@formkit/vue";
 
-export default defaultConfig({})
+export default defaultConfig({});
