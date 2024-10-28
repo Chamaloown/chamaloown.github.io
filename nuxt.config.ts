@@ -20,12 +20,38 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     "@nuxt/fonts",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n"
+    "@nuxtjs/i18n",
+    "@formkit/nuxt",
+    "@vueuse/motion/nuxt",
+    "@nuxt/eslint"
   ],
   primevue: {
     options: {
       unstyled: true,
     },
-    importPT: { from: path.resolve(__dirname, "./presets/aura/") }, //import and apply preset
+    importPT: { from: path.resolve(__dirname, "./presets/aura/") },
   },
+  eslint: {
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            }
+          }
+        }
+      }
+    }
+  }
+
 });

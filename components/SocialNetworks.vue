@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  defineProps<{
-  size?: number
-}>()
+    defineProps<{
+        size: number | undefined
+    }>()
 </script>
 
 <template>

@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 export default {
   content: [
     "./presets/**/*.{js,vue,ts}",
@@ -10,6 +8,7 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./formkit.theme.ts"
   ],
   theme: {
     colors: {

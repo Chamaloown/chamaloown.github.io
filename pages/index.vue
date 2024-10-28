@@ -1,14 +1,6 @@
-<script setup>
-const colorMode = useColorMode()
-const { locale, setLocale } = useI18n()
-const modeParams = ["system", "dark", "light"]
-const french = ref(false)
-
-</script>
-
-
 <template>
-    <div class="flex flex-col h-full w-full text-xl">
+    <div 
+    class="flex flex-col h-full w-full text-xl">
         <div class="space-y-16">
             <div class="flex">   
                 <div class="flex flex-auto flex-col justify-center text-left text-3xl space-y-10 w-1/2">
@@ -17,7 +9,7 @@ const french = ref(false)
                     <div>{{ $t('man') }}</div>
                 </div>
                 <div class="flex flex-col items-end w-1/3">
-                    <img src="/me.jpg" />
+                    <img src="/me.jpg" >
                     <div class="flex flex-row space-x-6">
                         <Icon name="uil:github" style="color: black" />
                         <Icon name="uil:linkedin" style="color: black" />
@@ -97,13 +89,13 @@ const french = ref(false)
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div/>
                 </div>
         </div>
 </template>
 
 <style lang="postcss">
-body {
+body, select {
   @apply bg-white text-black dark:bg-deepblue dark:text-white;
 }
 
