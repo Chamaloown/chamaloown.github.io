@@ -1,7 +1,7 @@
 <template>
   <div
     v-motion
-    class="m-24 space-y-16"
+    class="m-8 md:m-24 space-y-16"
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
     :variants="{ custom: { scale: 2 } }"
