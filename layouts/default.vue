@@ -9,7 +9,9 @@
     :duration="1200"
   >
     <DefaultHeader />
-    <slot />
+    <div>
+      <slot />
+    </div>
     <DefaultFooter />
   </div>
 </template>

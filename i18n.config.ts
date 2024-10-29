@@ -39,17 +39,17 @@ export default defineI18nConfig(() => ({
       man: "Je suis ici pour vous aider à concrétiser votre prochaine grande idée avec un support technique dédié.",
       me: "Je suis Malo, développeur web full-stack basé en France, créant des applications et des expériences en ligne pour des entreprises de toutes tailles.",
       developer:
-        "Depuis plus de cinq ans, j'aide des fondateurs et des entrepreneurs à construire la technologie qui fait avancer leurs organisations. Mon expertise réside dans le développement de systèmes ERP, de plateformes SaaS et de solutions IoT, en me concentrant sur la compréhension et la résolution de besoins complexes et spécifiques à chaque industrie.",
+        "Depuis plus de cinq ans, j'aide des fondateurs et des entrepreneurs à construire la technologie leur permettant de franchir une nouvelle étape dans leur organisation. Mon expertise réside dans le développement de systèmes ERP, de plateformes SaaS et de solutions IoT, en me concentrant sur la compréhension et la résolution de besoins complexes et spécifiques à chaque industrie.",
       computer:
-        "Avec une formation en informatique, j'aime résoudre des problèmes complexes et trouver des solutions adaptées. En tant que développeur full-stack, je gère chaque étape du processus, de la conception au déploiement, pour faire de votre vision une réalité.",
+        "J'aime résoudre des problèmes techniques et trouver des solutions adaptées. En tant que développeur full-stack, je gère chaque étape du processus, de la conception au déploiement, pour faire de votre vision une réalité.",
       founder:
         "Que vous soyez un fondateur non technique ou une entreprise établie, je suis là pour vous aider. Discutons-en — n'hésitez pas à m'envoyer un email !",
-      technologies: "Technologies que j'utilise",
+      technologies: "Mon expertise",
       whywithme: "Pourquoi travailler avec moi ?",
       background:
-        "Je ne suis pas seulement un développeur, je suis un résolveur de problèmes. Je m'épanouis dans la concrétisation d'idées grandes et audacieuses, aussi complexes ou ambitieuses qu'elles puissent paraître. Qu'il s'agisse de partir de zéro ou d'optimiser des systèmes déjà en place, je sais décomposer les choses et trouver la manière la plus intelligente de les réaliser.",
+        "Je ne suis pas seulement un développeur, je suis un résolveur de problèmes. Je m'épanouis dans la concrétisation de grandes idées, aussi complexes ou qu'audacieuses qu'elles puissent paraître. Qu'il s'agisse de partir de zéro ou d'optimiser des systèmes déjà en place, je sais analyser pour trouver la manière la plus intelligente de les réaliser.",
       independently:
-        "Avec des années d'expérience de travail indépendant, je suis rapide, flexible et je sais comment fournir un travail de haute qualité sous pression. J'ai développé des projets d'envergure internationale, et je comprends donc le besoin critique de fiabilité, de performance et de respect des délais.",
+        "Avec des années d'expérience de travail en indépendant, je suis rapide, flexible et capable fournir un travail de haute qualité sous pression. J'ai développé des projets d'envergure internationale, et je comprends donc le besoin critique de fiabilité, de performance et de respect des délais.",
       softskill:
         "Plus important encore, je crois en une communication claire. Je ne vous ennuierai pas avec des détails techniques à moins que vous ne les vouliez - vous avez besoin de résultats, et c'est exactement ce que je fournis.",
       chat: "Discutons-en",
